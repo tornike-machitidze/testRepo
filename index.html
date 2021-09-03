@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Git Commands</title>
+</head>
+<body>
+    <header>
+        <h1>Main Git Commands</h1>
+    </header>
+        <div class="main-commands">
+            <ul>
+                <li><span>git init</span>: (ინიციალიზაციას ახდენს (რეპოსიტორის) არსებულ ფოლდერში)Initialize a Git repository in the current folder</li>
+                <li><span>git status</span>:(აჩვენებს თუ რაიმე შეუნახავი ცვლილებები გვაქვს კოდში) Show the current status of your Git repository (the “working tree” status)</li>
+                <li><span>git add .</span>:(ამატებს იმ შეუნახავ ცვლილებებს ყველას ერთად რომელსაც სტატუსი აჩვენებს) Track changes of all files in your Repository</li>
+                <li><span>git commit -m "your message"</span>:(აკომიტებს და ინახავს საბოლოო ვერსიას რაც ადდით შევინახეთ) Save updated code to a new Commit named “your message”</li>          
+            </ul>
+        </div>
+        <div class="deep-commands">
+            <ul>
+                <li><span>git checkout  branch-name</span>:(გადავყავართ იმ ბრენჩზე რომელსაც მივუთითებთ branch-name-აქ, როგორც ბრანჩის სახელს) Stands on branch-name branch</li>
+                <li><span>git checkout ID</span>:(git log-ში გამოტანილი აიდი შეგვიძლია მივცეთ დადაგვაბრუნებს იმ კომიტზე, ეს არ ინახება უსაფრთხოა) Jump to a specific Commit of a Branch (commitid should be the ID of the Commit you want to checkout)</li>
+                <li><span>get reset --hard</span>:(უსაფრთხო არაა ! შლის მის შემდეგ დამატებულ კომიტებს და გვაბრუნებს იმ ცომიტზე რომელსაც გადავცემთ ამასაც აიდის სახით, მას შემდეგ დამატებულ კომიტებს წაშლის) Turn the selected Commit into the new HEAD</li>
+                <li><span>git checkout -- .</span>:(ბოლო შენახული კომიტის შემდეგ თუ იმუშავე ბევრი კოდი დაწერე მაგრამ არ მოგწონს და გინდა მარტივად გაასუფთაო ეს შეუნახავი დაუკომიტებებლი ცვლილება და დაბრუნდე ბოლო კომიტზე) Jump back to the last Commit and remove any untracked changes</li>
+                <li><span>git checkout -b branch-name</span>:(ქმნის ახალ ბრანჩს, რომელშიც შეგიძლია იზოლირებულად იმუშაო ისე რომ მაინ ბრანჩზე არაფერი შეიცვლება. ახალი ბრანჩის შექმნა შეუძლია ამ კომანდსაც უბრალოდ ეს ქმნის და მასზე არ დგება git branch branch-name) Create a new Branch named branch-name</li>
+                <li><span>git merge branch-name</span>:(როდესაც მორჩები ახალ ბრანჩში მუშაობას ის შეგიძლია ხილული გახადო მასტერ მაინ ბრანჩისთვის ამ კომანდით, დადგები მასტერზე და გადაცემ იმ ბრანჩის სახელს, რომელიც მასტერისთვის გინდა ხილული იყოს) Merge two Branches, branch-name is the Branch you merge with the Branch you’re currently working in</li>
+                <li><span>git branch -D branch-name</span>:(შლის ბრანჩს მაგრამ თუ დამერჯილია ეს ცვლილებები არ წაიშლება ამისთვის კომიტის წაშლაა საჭირო) Delete the Branch named branch-name</li>
+                <li><span>git log</span>: (აჩვენებს ყველა კომიტის აიდის და რომელია ბოლო ანუ ჰედ კომიტი მაგას)</li>
+                <li><span>git push</span>: (თუ დაკლონილი რეპოზიტორზე მუშაობ ეს მასტერ ბრანჩზე რო დადგები დაფუშავს ცვლილებებს ანუ ატვირთავს remote repositoryze იმაზე რომელიც გიტჰუბზე)</li>
+                <li><span>git push origin -u branch-name</span>: ( ეს იმ შემთხვევაში ცალკე ბრანჩზე მუშაობ და იქ ამატებ ცვლილებებს რემოუთზე)</li>        
+            </ul>
+        </div>
+        
+</body>
+</html>
