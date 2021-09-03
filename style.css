@@ -1,0 +1,45 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 20px;
+}
+
+body{
+    background-color: #F7F6F2;
+}
+
+h1{
+    font-size: 1.6rem;
+    padding: 20px 30px;
+}
+
+.main-commands {
+    padding: 20px 30px;
+    border-top: 3px  solid black;
+}
+
+.deep-commands{
+    padding: 20px 30px;
+    border-top: 3px solid black;
+}
+
+
+
+li:nth-child(Even){
+    padding: 20px 0;
+    background-color: #C8C6C6;
+}
+
+li:nth-child(odd){
+    padding: 20px 0;
+    background-color: #FFE194;
+}
+
+span{
+    font-size: 1.5rem;
+    color: #3D087B;
+}
